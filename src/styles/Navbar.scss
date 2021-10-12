@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+
+  &__user {
+    display: none;
+
+    @include sm {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--signin {
+      text-decoration: none;
+    }
+  }
+
+  &__links {
+    width: 100%;
+    display: flex;
+
+    &--login {
+      display: flex;
+
+      @include sm {
+        display: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      background-color: $black;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 15px;
+
+      &:hover {
+        background-color: $a-hover;
+      }
+    }
+  }
+}

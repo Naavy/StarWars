@@ -1,0 +1,43 @@
+// colors
+$black: #000;
+$white: #fff;
+$button: #505661;
+$button-hover: #5056619f;
+$button-active: #505661bd;
+$button-disabled-bg: #a3a3a3;
+$button-disabled-font: #5c5d5f;
+$character-card: #4c525c;
+$add-fav: #191b1d;
+$red-error: #a31325;
+$a-hover: #333333;
+
+// screen size
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+// mixins
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
